@@ -1,0 +1,194 @@
+@import "_variables.scss";
+
+.navbar-lower {
+  background-color: $navbar-lower-background-color;
+  .navbar-item.has-dropdown {
+    top: 3px;
+  }
+  .navbar-dropdown {
+    a.navbar-item.dropdown-item {
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .navbar-lower {
+    .navbar-start {
+      padding-left: 92px;
+    }
+
+    .navbar-dropdown {
+      background-color: $navbar-dropdown-color;
+    }
+  }
+}
+
+@media screen and (max-width: $desktop) {
+  .navbar-lower {
+    padding-left: 20px;
+  }
+}
+
+.border-button-color {
+  border-color: $border-button-color;
+}
+
+.border-button-hover-color {
+  &:hover {
+    border-color: $border-button-hover-color;
+  }
+}
+
+.offset-hero {
+  position: relative;
+  top: -30px;
+}
+
+nav.navbar {
+  background-color: $navbar-main-background-color;
+}
+
+#splash {
+  background-image: url('../image/splash_background.jpg');
+  background-size: cover;
+
+  .bottom-bar {
+    width: 100%;
+    background-color: $bottom-bar-color;
+    height: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+.navbar-end {
+  padding-left: 10px;
+}
+
+.banner-message {
+  background-color: $top-bar-color;
+  width: 100%;
+  padding: 2px 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: $banner-message-color;
+}
+
+.navbar-theme {
+  background-color: $navbar-main-background-color;
+}
+
+.navbar-menu {
+  justify-content: space-between;
+  .float-right-desktop {
+    display: flex;
+    @media screen and (max-width: 1087px) {
+      display: block;
+      padding-left: 10px;
+      border-top: 2px solid $mobile-navbar-divider-color;
+      padding-top: 5px;
+    }
+  }
+}
+
+.navbar-brand {
+  .navbar-item {
+    img.main-logo {
+      width: 100px;
+    }
+  }
+}
+
+.navbar-item {
+  font-size: 1.1em;
+}
+
+.organization-navbar-title {
+  padding-top: 20px;
+  color: $navbar-title-color;
+  font-size: 30px;
+}
+.navbar-buttons-wrapper {
+  padding-top: 20px;
+}
+
+a.navbar-item:hover,
+a.navbar-item.is-active,
+.navbar-link:hover,
+.navbar-link.is-active {
+  color: $navbar-link-hover-color !important;
+  background-color: transparent;
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+.navbar-burger.burger {
+  padding: 13px 0px 0px 0px;
+  width: 3.5rem;
+  height: 3.5rem;
+  color: #ffffff !important;
+}
+
+.navbar-burger:hover {
+  background-color: transparent;
+}
+
+/* Pulled from style.css */
+.navbar-center {
+  display: block;
+  background-color: transparent;
+  margin: 0 15px 15px 15px;
+}
+
+.navbar-item,
+.navbar-link {
+  color: $navbar-link-color;
+  background-color: transparent;
+  margin-right: 5px;
+  border-bottom: 5px solid transparent;
+  transition: 0.3s;
+}
+
+@media (min-width: $desktop) {
+  .navbar-brand {
+    padding-left: 30px;
+  }
+
+  .navbar-center {
+    display: flex;
+    background-color: transparent;
+  }
+
+  .navbar-item,
+  .navbar-link {
+    color: $navbar-link-color;
+  }
+}
+
+.hero-text {
+  color: $hero-text-color !important;
+}
+
+.hero-sub-text {
+  color: $hero-sub-text-color !important;
+}
+
+.hero-button {
+  background-color: $hero-button-background-color;
+  color: $hero-button-text-color;
+}
+
+.block-text-color {
+  color: $block-text-color;
+}
+
+.motivation-hero {
+  @media screen and (max-width: 768px) {
+    left: 0px !important;
+  }
+}
