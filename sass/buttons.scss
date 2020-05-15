@@ -1,0 +1,10 @@
+@import "_variables.scss";
+
+.button-background-theme {
+  background-color: $button-background-red;
+  border: 0;
+  color: $button-text-color;
+  &:hover {
+    color: $button-text-hover-color;
+  }
+}
