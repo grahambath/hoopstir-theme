@@ -1,13 +1,5 @@
 //FONTS
 @font-face {
-    font-family: 'Futura-Bold';
-    src: url('../fonts/Futura-Bold.woff2') format('woff2'),
-        url('../fonts/Futura-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'Avenir-Ultra-LT';
     src: url('../fonts/AvenirNextLTPro-UltLt.woff2') format('woff2'),
         url('../fonts/AvenirNextLTPro-UltLt.woff') format('woff');
@@ -29,6 +21,26 @@
         url('../fonts/AvenirNextLTPro-Demi.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura-Condensed';
+    src: url('../fonts/Futura-Condensed.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura-Bold';
+    src: url('../fonts/Futura-Bold.woff2') format('woff2'),
+        url('../fonts/Futura-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.font-futura-condensed {
+  font-family: 'Futura-Condensed' !important;
+  letter-spacing: 3px;
 }
 
 .font-avenir-ul {
@@ -55,7 +67,19 @@
 //
 
 // PADDING
-.padded-bottom-20 {
+
+.padding-20 {
+  padding: 20px;
+}
+
+.padding-25 {
+  padding: 25px;
+}
+
+.padding-30 {
+  padding-bottom: 20px;
+}
+.padding-bottom-20 {
   padding-bottom: 20px;
 }
 
@@ -63,7 +87,7 @@
   padding-top: 20px;
 }
 
-.padded-bottom-50 {
+.padding-bottom-50 {
   padding-bottom: 50px;
 }
 
@@ -71,7 +95,7 @@
   padding-top: 50px;
 }
 
-.padded-bottom-80 {
+.padding-bottom-80 {
   padding-bottom: 80px;
 }
 

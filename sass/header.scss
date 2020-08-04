@@ -107,10 +107,13 @@ nav.navbar {
 }
 
 .organization-navbar-title {
+  font-family: 'Futura-Bold';
   padding-top: 20px;
   color: $navbar-title-color;
   font-size: 30px;
+  letter-spacing: 1px;
 }
+
 .navbar-buttons-wrapper {
   padding-top: 20px;
 }
