@@ -3,15 +3,21 @@
 .navbar-lower {
   background-color: $navbar-lower-background-color;
   .navbar-item.has-dropdown {
-    top: 3px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.1em;
+    background-color: transparent;
+      &:hover {
+          background-color: #000;
+          .navbar-dropdown.navbar-item {
+              background-color: transparent;
+          }
+      }
   }
-  .navbar-dropdown {
     a.navbar-item.dropdown-item {
       &:hover {
-        background-color: transparent;
       }
     }
-  }
 }
 
 @media screen and (min-width: $desktop) {
@@ -103,7 +109,17 @@ nav.navbar {
 }
 
 .navbar-item {
-  font-size: 1.1em;
+  font-size: 1.15em;
+  font-family: 'Avenir-Demi-Bold';
+  letter-spacing: 0px;
+  margin: 0px;
+}
+
+.navbar-item0 {
+  font-size: 1.15em;
+  font-family: 'Avenir-Demi-Bold';
+  letter-spacing: 0px;
+  margin: 2px;
 }
 
 .organization-navbar-title {
@@ -123,7 +139,7 @@ a.navbar-item.is-active,
 .navbar-link:hover,
 .navbar-link.is-active {
   color: $navbar-link-hover-color !important;
-  background-color: transparent;
+  background-color: #000;
 }
 
 .navbar {
@@ -148,12 +164,15 @@ a.navbar-item.is-active,
   margin: 0 15px 15px 15px;
 }
 
-.navbar-item,
+.navbar-item {
+  color: $navbar-link-color;
+  background-color: transparent; 
+}
 .navbar-link {
   color: $navbar-link-color;
   background-color: transparent;
   margin-right: 5px;
-  border-bottom: 5px solid transparent;
+  border-bottom: 0px solid transparent;
   transition: 0.3s;
 }
 
