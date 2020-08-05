@@ -2981,6 +2981,12 @@ fieldset[disabled] .button {
   position: relative;
 }
 
+.container-hoop {
+  margin: 0;
+    padding: 0;
+  position: static;
+}
+
 @media screen and (min-width: 1088px) {
   .container {
     max-width: 960px;

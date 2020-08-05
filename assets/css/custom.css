@@ -49,6 +49,10 @@ nav.navbar{
 .card{
     width: 100% !important;
     padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+    box-shadow: 1.5px 3px gray;
+    background-color:azure
     
 }
 

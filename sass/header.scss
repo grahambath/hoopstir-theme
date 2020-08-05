@@ -194,15 +194,15 @@ a.navbar-item.is-active,
 
 .hero-text {
   color: $hero-text-color !important;
+  font-family: 'Futura-Bold';
+  font-size: 35px;
+  line-height: 60px;
+  letter-spacing: 2px;    
 }
 
 .hero-sub-text {
   color: $hero-sub-text-color !important;
-}
-
-.hero-button {
-  background-color: $hero-button-background-color;
-  color: $hero-button-text-color;
+  line-height: 30px;
 }
 
 .block-text-color {

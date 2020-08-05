@@ -8,3 +8,32 @@
     color: $button-text-hover-color;
   }
 }
+
+.navbar-button {
+  background-color: $button-background-red;
+  border: 0;
+  color: $button-text-color;
+  &:hover {
+    color: $button-text-hover-color;
+  }
+}
+
+.hero-button {
+  border: 1px;    
+  background-color: $hero-button-background-color;
+  color: $button-text-color;
+  &:hover {
+    color: $button-text-hover-color;
+  }
+}
+
+.card-button {
+  border: 1px; 
+  font-family: 'Avenir-Demi-Bold';
+  background-color: $hero-button-background-color;
+  color: $button-text-color;
+  &:hover {
+    color: $button-text-hover-color;
+    background-color: #4CAF50; /* Green */
+  }
+}
