@@ -22,9 +22,16 @@ nav.navbar{
 }
 /* Hero  */
 .hero-body{
-    background-image: url('../image/zorbg.jpg');
+    background-image: url(../image/hero1.jpg);
     background-position: center;
-    background-size: cover;
+    height: 600px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.opacity {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
 }
 @media (max-width: 768px){
     .head_none{
@@ -51,7 +58,7 @@ nav.navbar{
     padding: 15px;
     border-radius: 5px;
     text-align: left;
-    box-shadow: 1.5px 3px gray;
+    box-shadow: 1.5px 3px 5px gray;
     background-color:azure
     
 }

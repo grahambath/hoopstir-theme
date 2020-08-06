@@ -2,16 +2,15 @@
 
 .navbar-lower {
   background-color: $navbar-lower-background-color;
+  box-shadow: 0px 2px 20px grey;
+  height: auto;
   .navbar-item.has-dropdown {
     padding: 0px;
     margin: 0px;
     font-size: 1.1em;
     background-color: transparent;
-      &:hover {
-          background-color: #000;
-          .navbar-dropdown.navbar-item {
-              background-color: transparent;
-          }
+    &:hover {
+        background-color: #D94D00;
       }
   }
     a.navbar-item.dropdown-item {
@@ -113,6 +112,9 @@ nav.navbar {
   font-family: 'Avenir-Demi-Bold';
   letter-spacing: 0px;
   margin: 0px;
+    &:hover {
+        background-color: #D94D00;
+    }
 }
 
 .navbar-item0 {

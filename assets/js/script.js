@@ -171,3 +171,19 @@ function toggle(item, id, imageId) {
     $('#' + imageId).removeClass('hide')
     $('#' + imageId).addClass('show')
 }
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar-lower");
+
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+

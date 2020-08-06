@@ -24,16 +24,17 @@ body {
 }
 
 .main-content {
-  background: #fff url("../image/white-background.png");
+  background: #E0E0E0;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: top center;
+    position: inherit;
   height: auto;
-  padding: 0px 0px 50px;
+  width: 97%;
+  padding: 0px 0px 30px;
   border-style: none;
   border-radius: 20px;
-  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
-  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.55);
+  background-image: 0;
+  box-shadow: 0px 0px 3px white;
 }
 
 .main-content .hero.is-medium .hero-body {
