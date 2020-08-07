@@ -334,10 +334,16 @@ h1,
 h2,
 h3,
 h4,
-h5,
+h5 {
+    
+}
+
 h6 {
   margin: 0;
-  padding: 0;
+  padding-left: 35px;
+  font-family: 'Futura-Bold';
+  color: white;
+  font-size: 3rem;
 }
 
 h1,
@@ -345,10 +351,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-size: 100%;
-  font-weight: normal;
-}
+h6,
 
 ul {
   list-style: none;
@@ -11386,10 +11389,6 @@ print {
 .hero-body {
   flex-grow: 1;
   flex-shrink: 0;
-  padding: 3rem 1.5rem;
-}
-
-.section {
   padding: 3rem 1.5rem;
 }
 

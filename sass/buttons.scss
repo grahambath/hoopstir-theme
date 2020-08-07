@@ -1,7 +1,7 @@
 @import "_variables.scss";
 
 .titlebar-button {
-  background-color: $button-background-red;
+  background-color: $theme-trim-color;
   font-family: 'Avenir-Demi-Bold';   
   text-align: center;
   border: 0px solid;
@@ -9,13 +9,13 @@
   transition: 0.2s;    
   &:hover {
     color: $button-text-hover-color;
-      background-color: #D94D00;
+      background-color: $theme-button-hover-color;
       box-shadow: 2px 2px 2px grey;
   }
 }
 
 .hero-button {
-  background-color: $button-background-red;
+  background-color: $theme-trim-color;
   font-family: 'Avenir-Demi-Bold';   
   text-align: center;
   border: 0px solid;
@@ -23,13 +23,13 @@
   transition: 0.2s;    
   &:hover {
     color: $button-text-hover-color;
-      background-color: #D94D00;
+      background-color: $theme-button-hover-color;
       box-shadow: 2px 2px 2px grey;
   }
 }
 
 .card-button {
-  background-color: $button-background-red;
+  background-color: $theme-trim-color;
   font-family: 'Avenir-Demi-Bold';   
   text-align: center;
   border: 0px solid;
@@ -37,7 +37,7 @@
   transition: 0.2s;    
   &:hover {
     color: $button-text-hover-color;
-      background-color: #D94D00;
+      background-color: $theme-button-hover-color;
       box-shadow: 1px 1px 2px grey;
   }
 }

@@ -27,14 +27,28 @@ body {
   background: #E0E0E0;
   background-repeat: no-repeat;
   background-size: contain;
-    position: inherit;
+  position: inherit;
   height: auto;
   width: 97%;
-  padding: 0px 0px 30px;
-  border-style: none;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
   border-radius: 20px;
+  border: 1px solid $theme-trim-color;    
   background-image: 0;
-  box-shadow: 0px 0px 3px white;
+  box-shadow: 0px 0px 0px white;
+}
+
+.primary-theme-color {
+  color: $theme-trim-color;
+}
+
+.secondary-block-text-color {
+  color: $secondary-block-text-color;
+}
+
+.block-text-color {
+  color: $block-text-color;
 }
 
 .main-content .hero.is-medium .hero-body {
@@ -274,6 +288,11 @@ a.active {
   color: #D7BF5D;
 }
 
+.splash-logo {
+    padding-top: 80px;
+    max-width: 600px;
+  }
+
 .home {
   .hero-body {
     margin-bottom: 40px;
@@ -403,20 +422,16 @@ table.table.standings {
   }
 }
 
-
-// MAXHOOPS
-
 .main-body {
   padding: 40px 0px;
-}
-
-.primary-theme-color {
-  color: $primary-theme-block-heading-color;
+    border-color: $theme-trim-color; 
+    border: 1px solid;
 }
 
 .text-block {
   padding: 20px;
   border-radius: 5px;
+    text-align: left;
 
   &.background-color-block {
     background-color: #efefef;
@@ -424,6 +439,8 @@ table.table.standings {
 
   .content {
     padding-top: 20px;
+      padding-bottom:10px;
+      text-align: left;
   }
 }
 
@@ -606,10 +623,6 @@ img.selector-image {
   @media screen and (max-width: 768px) {
     width: 100% !important;
   }
-}
-
-.secondary-block-text-color {
-  color: $secondary-block-text-color;
 }
 
 .accordion-page-container {
