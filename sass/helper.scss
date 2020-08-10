@@ -651,12 +651,6 @@ img.selector-image {
   }
 }
 
-.width-100-mobile {
-  @media screen and (max-width: 768px) {
-    width: 100% !important;
-  }
-}
-
 .accordion-page-container {
   max-width: 1300px;
   padding-top: 25px;
