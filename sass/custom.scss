@@ -206,9 +206,12 @@ h5.card-title {
 
 // NEW CODE
 
+.navbar-menu .navbar-item:hover,
 .navbar-dropdown a.navbar-item:hover {
-    background-color: #000000;
+    background-color: #D94D00;
 }
+
+
 
 .navbar-dropdown {
     padding-top: 0;
