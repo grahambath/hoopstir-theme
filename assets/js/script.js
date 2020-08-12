@@ -67,90 +67,90 @@ function scrollFunction() {
 }
 
 $('#tabs li').on('click', function () {
-        var tab = $(this).data('tab');
+    var tab = $(this).data('tab');
 
-        $('#tabs li').removeClass('is-active');
-        $(this).addClass('is-active');
+    $('#tabs li').removeClass('is-active');
+    $(this).addClass('is-active');
 
-        $('#tab-content div.tab-content').removeClass('is-active');
-        $('div[data-content="' + tab + '"]').addClass('is-active');
+    $('#tab-content div.tab-content').removeClass('is-active');
+    $('div[data-content="' + tab + '"]').addClass('is-active');
+});
+
+// Dropdowns
+
+var $dropdowns = getAll('.dropdown:not(.is-hoverable)');
+
+if ($dropdowns.length > 0) {
+    $dropdowns.forEach(function ($el) {
+        $el.addEventListener('click', function (event) {
+            event.stopPropagation();
+            $el.classList.toggle('is-active');
+        });
     });
 
-    // Dropdowns
-
-    var $dropdowns = getAll('.dropdown:not(.is-hoverable)');
-
-    if ($dropdowns.length > 0) {
-        $dropdowns.forEach(function ($el) {
-            $el.addEventListener('click', function (event) {
-                event.stopPropagation();
-                $el.classList.toggle('is-active');
-            });
-        });
-
-        document.addEventListener('click', function (event) {
-            closeDropdowns();
-        });
-    }
-
-    function closeDropdowns() {
-        $dropdowns.forEach(function ($el) {
-            $el.classList.remove('is-active');
-        });
-    }
-
-    // Close dropdowns if ESC pressed
-    document.addEventListener('keydown', function (event) {
-        var e = event || window.event;
-        if (e.keyCode === 27) {
-            closeDropdowns();
-        }
+    document.addEventListener('click', function (event) {
+        closeDropdowns();
     });
+}
 
-    // Functions
+function closeDropdowns() {
+    $dropdowns.forEach(function ($el) {
+        $el.classList.remove('is-active');
+    });
+}
 
-    function getAll(selector) {
-        return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
+// Close dropdowns if ESC pressed
+document.addEventListener('keydown', function (event) {
+    var e = event || window.event;
+    if (e.keyCode === 27) {
+        closeDropdowns();
     }
+});
 
-    // League Selection Function
+// Functions
 
-    defaultLeagueSelection = () =>{
-        for(let i=10;i<=15;i++){
-            let _temp1 = '#u' + i + '_standing';
-            let _temp2 = '#u' + i + '_score';
-            $(_temp1).hide();
-            $(_temp2).hide();
-        }
-        $('.selectedLeagueName').html('u10 Boys');
-        $('#u10_standing').show();
-        $('#u10_score').show();
+function getAll(selector) {
+    return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
+}
+
+// League Selection Function
+
+defaultLeagueSelection = () => {
+    for (let i = 10; i <= 15; i++) {
+        let _temp1 = '#u' + i + '_standing';
+        let _temp2 = '#u' + i + '_score';
+        $(_temp1).hide();
+        $(_temp2).hide();
     }
+    $('.selectedLeagueName').html('u10 Boys');
+    $('#u10_standing').show();
+    $('#u10_score').show();
+}
 
-    defaultLeagueSelection();
+defaultLeagueSelection();
 
-    $("#league_select").change(function () {
-        for(let i=10;i<=15;i++){
-            let _temp1 = '#u' + i + '_standing';
-            let _temp2 = '#u' + i + '_score';
-            $(_temp1).hide();
-            $(_temp2).hide();
-        }
-        let selectedLeague = $(this).val();
-        let selectedLeagueId1 = '#' + selectedLeague + '_standing';
-        let selectedLeagueId2 = '#' + selectedLeague + '_score';
-        $(selectedLeagueId1).show();
-        $(selectedLeagueId2).show();
-        $('.selectedLeagueName').html(selectedLeague +' Boys');
+$("#league_select").change(function () {
+    for (let i = 10; i <= 15; i++) {
+        let _temp1 = '#u' + i + '_standing';
+        let _temp2 = '#u' + i + '_score';
+        $(_temp1).hide();
+        $(_temp2).hide();
+    }
+    let selectedLeague = $(this).val();
+    let selectedLeagueId1 = '#' + selectedLeague + '_standing';
+    let selectedLeagueId2 = '#' + selectedLeague + '_score';
+    $(selectedLeagueId1).show();
+    $(selectedLeagueId2).show();
+    $('.selectedLeagueName').html(selectedLeague + ' Boys');
 
-        // if(selectedLeague == 'u14' || selectedLeague == 'u15'){
-        //     $('#optionalTeam1').hide();
-        //     $('#optionalTeam2').hide();
-        // }else{
-        //     $('#optionalTeam1').show();
-        //     $('#optionalTeam2').show();
-        // }
-    })
+    // if(selectedLeague == 'u14' || selectedLeague == 'u15'){
+    //     $('#optionalTeam1').hide();
+    //     $('#optionalTeam2').hide();
+    // }else{
+    //     $('#optionalTeam1').show();
+    //     $('#optionalTeam2').show();
+    // }
+})
 
 function subToggle(item, id) {
     $('.teamSub').removeClass('show')
@@ -172,18 +172,76 @@ function toggle(item, id, imageId) {
     $('#' + imageId).addClass('show')
 }
 
-window.onscroll = function() {myFunction()};
+// window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("navbar-lower");
+// var navbar = document.getElementById("navbar-lower");
 
-var sticky = navbar.offsetTop;
+// var sticky = navbar.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+// function myFunction() {
+//   if (window.pageYOffset >= sticky) {
+//     navbar.classList.add("sticky")
+//   } else {
+//     navbar.classList.remove("sticky");
+//   }
+// }
+
+// sticky menu
+
+$(window).on('scroll', function () {
+    if ($(this).scrollTop() > 0) {
+        $(".navbar-fixed").addClass("sticky-2");
+    } else {
+        $(".navbar-fixed").removeClass("sticky-2");
+    }
+});
+
+$(window).on('scroll', function () {
+    if ($(this).scrollTop() > 0) {
+        $(".navbar-lower").addClass("sticky");
+    } else {
+        $(".navbar-lower").removeClass("sticky");
+    }
+});
+
+$(window).on('scroll', function () {
+    if ($(this).scrollTop() > 0) {
+        $(".fixed-top").addClass("sticky-1");
+    } else {
+        $(".fixed-top").removeClass("sticky-1");
+    }
+});
+
+$(window).on('scroll', function () {
+    if ($(this).scrollTop() > 0) {
+        $(".fixed-nav").addClass("sticky-2");
+    } else {
+        $(".fixed-nav").removeClass("sticky-2");
+    }
+});
+
+
+
+// DROP-DOWN
+
+$(window).on('resize load', function () {
+    console.log('hei');
+    if ($(window).width() <= 992) {
+        console.log('992');
+        $(".dropbtn").on("click", function () {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active');
+                $('.navbar-dropdown').slideUp();
+            } else {
+                $(this).addClass('active');
+                $('.navbar-dropdown').slideDown();
+            }
+        });
+    }
+
+})
+
+
+
 
 

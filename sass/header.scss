@@ -15,6 +15,7 @@
   }
     a.navbar-item.dropdown-item {
       &:hover {
+          color: #000;
       }
     }
 }
@@ -117,7 +118,7 @@ nav.navbar {
     }
 }
 
-.navbar-item0 {
+.navbar-item {
   font-size: 1.15em;
   font-family: 'Avenir-Demi-Bold';
   letter-spacing: 0px;
