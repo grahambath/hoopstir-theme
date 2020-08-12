@@ -218,9 +218,8 @@ h5.card-title {
   }
 }
 
-.navbar-menu .navbar-item:hover,
 .navbar-dropdown a.navbar-item:hover {
-  background-color: #D94D00;
+  background-color: #000000;
 }
 
 .navbar-dropdown {
