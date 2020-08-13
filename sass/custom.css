@@ -356,6 +356,7 @@ h5.card-title {
 @media screen and (min-width: 1088px) {
   .navbar-item.is-active .navbar-dropdown, .navbar-item.is-hoverable:hover .navbar-dropdown {
     display: block !important;
+    background-color: #D94D00;      
   }
 }
 /*# sourceMappingURL=custom.css.map */

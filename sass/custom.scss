@@ -206,8 +206,9 @@ h5.card-title {
 
 // NEW CODE
 
+.navbar-menu .navbar-item:hover,
 .navbar-dropdown a.navbar-item:hover {
-    background-color: #000000;
+    background-color: #D94D00;
 }
 
 .navbar-dropdown {
@@ -336,5 +337,6 @@ h5.card-title {
 @media screen and (min-width: 1088px){
     .navbar-item.is-active .navbar-dropdown, .navbar-item.is-hoverable:hover .navbar-dropdown {
         display: block !important;
+    background-color: #D94D00;        
     }
 }
