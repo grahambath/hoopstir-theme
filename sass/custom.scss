@@ -138,6 +138,7 @@ h5.card-title {
     color: #e14b02 !important;
 }
 
+.menu_area{}
 .menu_area li{
     display: inline-block;
     position: relative;
@@ -186,7 +187,7 @@ h5.card-title {
     color: #fff;
     padding: 5px 14px;
 }
-.drop-down li a:hover{ 
+.drop-down li a:hover{
     color: #000;
     background: #E14B02;
 }
@@ -200,143 +201,5 @@ h5.card-title {
     }
     .drop-menu:before{
         right: 10px;
-    }
-}
-
-
-// NEW CODE
-
-.navbar-menu .navbar-item:hover,
-.navbar-dropdown a.navbar-item:hover {
-    background-color: #D94D00;
-}
-
-.navbar-dropdown {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-.navbar-burger.burger {
-    height: 4.5rem;
-}
-
-.banner-message {
-    padding: 0px 30px;
-}
-
-.navbar-item,.navbar-link {
-    transition: .5s ease-in-out;
-}
-
-.fixed-top,
-.fixed-nav,
-.navbar-lower {
-    transition: .3s;
-    background-color: #D95F00;
-}
-.sticky{
-    background: #D95F00;
-    padding: 0px;
-    position: fixed;
-    top: 98px;
-	z-index:9999;
-    width: 100%;
-    box-shadow: 0px 2px 8px rgb(94, 94, 94); 
-    transition: .5s ;
-    .navbar-item,.navbar-link {
-        padding: 20px 12px;
-        transition: all .5s;
-    }
-} 
-
-.sticky-1{
-    background: #D95F00;
-    padding: 0px;
-    position: fixed;
-    top: 105px;
-	z-index:9999;
-    width: 100%;
-    box-shadow: 0px 2px 8px rgb(94, 94, 94); 
-    transition: .5s ;
-    .navbar-item,.navbar-link {
-        padding: 20px 12px;
-        transition: all .5s;
-    }
-} 
-
-
-.sticky-2{
-    background: #D95F00;
-    padding-top: 13px;
-    padding-bottom: 12px;
-    position: fixed;
-    top: 0px;
-	z-index:9999;
-    width: 100%;
-    box-shadow: 0px 2px 8px rgb(94, 94, 94); 
-    transition: .5s ease-in-out;
-} 
-
-
-@media (max-width: 1088px) {
-    .navbar-brand {
-        background-color: #000;
-    }
-    .navbar {
-        padding: 0;
-    }
-    .organization-navbar-title{
-        color: #4a4a4a!important;
-    }
-    .navbar-burger.burger {
-        color: #fff;
-    }
-    .sticky {
-        top: 217px;
-        .navbar-item,.navbar-link {
-            padding: 10px 30px;
-            transition: .5s ease-in-out;
-        }
-    }
-    .navbar-dropdown {
-        display: none;
-    }
-
-     a.active {
-        color: fff!important;
-    }
-  
-}
-
-@media (max-width: 768px) {
-    .navbar-brand {
-        width: 100%;
-    }
-    .sticky {
-        top:188px;
-    }
-}
-
-
-@media (max-width: 480px) {
-    .button.is-medium {
-        font-size: 14px;
-    }
-    .hero-button.button {
-        padding: 8px;
-    }
-    .home .motivation-hero h1 {
-        font-size: 2rem!important;
-    }
-    .hero-text {
-        letter-spacing: 0;
-    }
-}
-
-
-
-@media screen and (min-width: 1088px){
-    .navbar-item.is-active .navbar-dropdown, .navbar-item.is-hoverable:hover .navbar-dropdown {
-        display: block !important;
-    background-color: #D94D00;        
     }
 }

@@ -15,7 +15,7 @@
   }
     a.navbar-item.dropdown-item {
       &:hover {
-          color: #000;
+        color: #fff;
       }
     }
 }
@@ -118,7 +118,7 @@ nav.navbar {
     }
 }
 
-.navbar-item {
+.navbar-item0 {
   font-size: 1.15em;
   font-family: 'Avenir-Demi-Bold';
   letter-spacing: 0px;
@@ -211,5 +211,75 @@ a.navbar-item.is-active,
 .motivation-hero {
   @media screen and (max-width: 768px) {
     left: 0px !important;
+  }
+}
+
+
+
+// NEW CODE
+
+.navbar-menu .navbar-item:hover,
+.navbar-dropdown a.navbar-item:hover {
+    background-color: #D94D00;
+}
+
+
+.navbar-dropdown {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-burger.burger {
+  height: 4.5rem;
+}
+
+.banner-message {
+  padding: 0;
+}
+
+@media (max-width: 1088px) {
+  .navbar-dropdown {
+    display: none;
+  }
+  .organization-navbar-title {
+    color: #4a4a4a;
+  }
+
+//   #navbarBasic {
+//     margin-top: 90px;
+// }
+  
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    width: 100%;
+    background-color: #000;
+  }
+  .navbar {
+        min-height: 5.50rem;
+  }
+ 
+}
+
+
+@media (max-width: 480px) {
+  .button.is-medium {
+      font-size: 14px;
+  }
+  .hero-button.button {
+      padding: 8px;
+  }
+  .home .motivation-hero h1 {
+      font-size: 2rem!important;
+  }
+  .hero-text {
+      letter-spacing: 0;
+  }
+}
+
+@media screen and (min-width: 1088px){
+  .navbar-item.is-active .navbar-dropdown, .navbar-item.is-hoverable:hover .navbar-dropdown {
+      display: block !important;
   }
 }

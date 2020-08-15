@@ -172,76 +172,39 @@ function toggle(item, id, imageId) {
     $('#' + imageId).addClass('show')
 }
 
-// window.onscroll = function() {myFunction()};
+// window.onscroll = function () { myFunction() };
 
 // var navbar = document.getElementById("navbar-lower");
 
 // var sticky = navbar.offsetTop;
 
 // function myFunction() {
-//   if (window.pageYOffset >= sticky) {
-//     navbar.classList.add("sticky")
-//   } else {
-//     navbar.classList.remove("sticky");
-//   }
+//     if (window.pageYOffset >= sticky) {
+//         navbar.classList.add("sticky")
+//     } else {
+//         navbar.classList.remove("sticky");
+//     }
 // }
 
-// sticky menu
-
-$(window).on('scroll', function () {
-    if ($(this).scrollTop() > 0) {
-        $(".navbar-fixed").addClass("sticky-2");
-    } else {
-        $(".navbar-fixed").removeClass("sticky-2");
-    }
-});
-
-$(window).on('scroll', function () {
-    if ($(this).scrollTop() > 0) {
-        $(".navbar-lower").addClass("sticky");
-    } else {
-        $(".navbar-lower").removeClass("sticky");
-    }
-});
-
-$(window).on('scroll', function () {
-    if ($(this).scrollTop() > 0) {
-        $(".fixed-top").addClass("sticky-1");
-    } else {
-        $(".fixed-top").removeClass("sticky-1");
-    }
-});
-
-$(window).on('scroll', function () {
-    if ($(this).scrollTop() > 0) {
-        $(".fixed-nav").addClass("sticky-2");
-    } else {
-        $(".fixed-nav").removeClass("sticky-2");
-    }
-});
 
 
+//DROP - DOWN
 
-// DROP-DOWN
+// $(window).on('resize load', function () {
+console.log('hei');
+if ($(window).width() <= 992) {
+    console.log('992');
+    $(".dropbtn").on("click", function () {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $('.navbar-dropdown').slideUp();
+        } else {
+            $(this).addClass('active');
+            $('.navbar-dropdown').slideDown();
+        }
+    });
+}
 
-$(window).on('resize load', function () {
-    console.log('hei');
-    if ($(window).width() <= 992) {
-        console.log('992');
-        $(".dropbtn").on("click", function () {
-            if ($(this).hasClass('active')) {
-                $(this).removeClass('active');
-                $('.navbar-dropdown').slideUp();
-            } else {
-                $(this).addClass('active');
-                $('.navbar-dropdown').slideDown();
-            }
-        });
-    }
-
-})
-
-
-
+// })
 
 
