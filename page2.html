@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html class="home" lang="en" id="html">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport">
+    <meta name="description" content="">
+    <meta name="auther" content="">
+    <title>Heatcheck Basketball</title>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link href="https://vjs.zencdn.net/7.3.0/video-js.min.css" rel="stylesheet">
+    <!-- Slick Slider CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css">
+    <!-- Animate style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+    <!-- Main style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/helper.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">   
+  </head>
+
+  <body>
+
+    <!-- Top Menu -->
+
+<nav class="navbar padding--1" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/index.html">
+      <img class="main-logo" src="assets/image/logo1.png" alt="" width="112" height="80">
+    </a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <!-- <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        Home
+      </a>
+
+      <a class="navbar-item">
+        Documentation
+      </a>
+    </div> -->
+
+  <div id="navbarBasic" class="navbar-menu navbar-theme font-avenir-regular">
+    <div class="navbar-end">
+      <div class="organization-navbar-title font-futura-bold is-hidden-mobile">
+        Heatcheck Hoops
+      </div>
+    </div>
+    <div class="float-right-desktop">
+      <div class="navbar-buttons-wrapper">
+        <a class="button header-button margin-right-10 is-hidden-mobile" href="https://app.hoopstir.com/login?organization_id=5acbb38a5c07adc63e79f8fb">Login</a>
+        <a class="button header-button is-hidden-mobile" href="registration.html">Find programs</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="navbar-lower navbar-menu">
+  <div class="navbar-start">
+      <a class="navbar-item" href="index.html">
+        Home
+      </a>
+
+      <a class="navbar-item" href="page1.html">
+        Page 1
+      </a>
+      
+      <a class="navbar-item is-active" href="#">
+        Page 2
+      </a>
+      
+      <a class="navbar-item" href="registration.html">
+        Registration
+      </a>
+      
+    <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-item">
+          Get in Touch Today
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item dropdown-item" href="tel:1-800-999-0000">
+            Phone Now
+          </a>
+            
+          <a class="navbar-item dropdown-item" href="mailto:info@heatcheck.com">
+            Email now
+          </a>    
+            
+          <a class="navbar-item dropdown-item" href="sms:1-800-999-0000">
+            Text Now
+          </a>  
+            
+          <a class="smooth navbar-item dropdown-item" href="#footer">
+            Contact Info
+          </a>    
+        </div>
+    </div>
+  </div>
+</div>
+
+<!--div class="banner-message"></div-->
+
+    <!-- About Us Section -->
+
+  <div class="margin-top-80 margin-bottom-80">
+  <div class="main-content">
+
+                   <!-- Centered Heading, Text Block -->
+          <div class="container padding-top-50 width-80 width-97-mobile is-centered">
+            <h1 class="is-size-head is-uppercase font-futura-bold primary-theme-color">
+                Page 2 Heading
+            </h1>
+
+            <h3 class="has-text-black margin-top-20 is-size-5 has-line-height-30 font-avenir-regular">
+              Our training programs are divided by age and skill level with instruction provided by highly qualified instructors and coaches.  With a Hoopstir managed website you can choose how to to organize your programs.  A few ideas are exampled in the tabs below.
+            </h3>
+          </div>
+          <!-- End --> 
+               
+        
+                <!-- Tab Section Starts-->
+            <div class="tabs is-small is-centered is-toggle is-toggle-rounded margin-top-30 padded-bottom-20 width-90-mobile">
+                  <ul>
+                    <li class="tab is-active font-futura-bold is-size-6" onclick="openTab(event,'tab1')"><a >By Program Type</a></li>
+                    <li class="tab font-futura-bold is-size-6 has-text-white" onclick="openTab(event,'tab2')"><a >By Levels</a></li>
+                    <li class="tab font-futura-bold is-size-6" onclick="openTab(event,'tab3')"><a >By Locations</a></li>
+                    <li class="tab font-futura-bold is-size-6" onclick="openTab(event,'tab4')"><a >By Program Types</a></li>
+                  </ul>
+            </div>
+                <!-- Tab Section Ends-->        
+        
+        <!-- Tile Section Starts-->
+        <div class="width-90 is-centered width-97-mobile">
+        
+        <section class="clearfix">    
+        <div id="tab1" class="content-tab" >
+            <div class="tile is-ancestor">
+              <div class="tile is-vertical is-6">
+                <div class="tile">
+                  <div class="tile is-parent is-vertical">
+                      
+                    <article class="tile is-child notification">
+                      <h3 class="is-size-5 font-futura-bold secondary-block-text-color padded-bottom-10">Beginner Basketball (Boys)1</h3>
+                        <img src="assets/image/s1.png" height="auto" width="100%">
+                      <p class="is-size-6">This program is dedicated to implementing athletic fundamentals to improve basketball-specific athleticism as well as basketball skills training to enhance individual and team performance.</p><a class="smooth button tile-button" href="registration.html">Girls</a><a class="margin-left-10 smooth button tile-button" href="registration1.html">Boys</a>
+                    </article>
+                      
+                    <article class="tile is-child notification">
+                      <h3 class="is-size-5 font-futura-bold secondary-block-text-color padded-bottom-10">Beginner Basketball (Girls)1</h3>
+                        <!--img src="assets/image/s2.png" height="auto" width="100%"-->
+                      <p class="is-size-6">This program is dedicated to implementing athletic fundamentals to improve basketball-specific athleticism as well as basketball skills training to enhance individual and team performance.</p><a class="smooth button tile-button" href="registration.html">Girls</a><a class="margin-left-10 smooth button tile-button" href="registration1.html">Boys</a>
+                    </article>
+                  </div>
+
+                </div>
+                <div class="tile is-parent">
+                    
+                  <article class="tile is-child notification">
+                    <h3 class="is-size-4 font-futura-bold secondary-block-text-color padded-bottom-10">Intermediate Basketball (Boys)1</h3>
+                    <p class="is-size-6">This program is dedicated to implementing athletic fundamentals to improve basketball-specific athleticism as well as basketball skills training to enhance individual and team performance.</p><a class="smooth button tile-button" href="registration1.html">See More</a>
+                    <div class="content">
+                      <!-- Content -->
+                    </div>
+                  </article>
+                    
+                </div>
+                <div class="tile is-parent">
+                    
+                  <article class="tile is-child notification">
+                    <h3 class="is-size-4 font-futura-bold secondary-block-text-color padded-bottom-10">Intermediate Basketball (Girls)1</h3>
+                    <p class="is-size-6">This program is dedicated to implementing athletic fundamentals to improve basketball-specific athleticism as well as basketball skills training to enhance individual and team performance.</p><a class="smooth button tile-button" href="registration.html">Girls</a><a class="margin-left-10 smooth button tile-button" href="registration1.html">Boys</a>
+                      <!-- Content -->
+                    </article>
+                    
+                    </div>
+              </div>
+                <div class="tile is-vertical is-6">
+                <div class="tile">
+                  <div class="tile is-parent is-vertical">
+                      
+                    <article class="tile is-child notification">
+                      <h3 class="is-size-5 font-futura-bold secondary-block-text-color padded-bottom-10">Youth Leagues</h3>
+                        <img src="assets/image/s6.png" height="auto" width="100%">
+                      <p class="is-size-6">This program is dedicated to implementing athletic fundamentals to improve basketball-specific athleticism as well as basketball skills training to enhance individual and team performance.</p><a class="smooth button tile-button" href="registration.html">Girls</a><a class="margin-left-10 smooth button tile-button" href="registration.html">Boys</a>
+                    </article>
+                    <article class="tile is-child notification has-background-white">
+                      <h3 class="is-size-4 font-futura-bold secondary-block-text-color padded-bottom-10">Club Leagues</h3>
+                      <p class="is-size-6">This program is dedicated to implementing athletic fundamentals to improve basketball-specific athleticism as well as basketball skills training to enhance individual and team performance.</p><a class="smooth button tile-button" href="registration.html">Girls</a><a class="margin-left-10 smooth button tile-button" href="registration.html">Boys</a>
+                    </article>
+                      
+                  </div>
+
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child notification">
+                    <h3 class="is-size-4 font-futura-bold secondary-block-text-color padded-bottom-10">Men's Leagues</h3>
+                    <p class="is-size-6">This program is dedicated to implementing athletic fundamentals to improve basketball-specific athleticism as well as basketball skills training to enhance individual and team performance.</p><a class="smooth button tile-button" href="registration.html">See More</a>
+                    <div class="content">
+                      <!-- Content -->
+                    </div>
+                  </article>
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child notification">
+                    <h3 class="is-size-4 font-futura-bold secondary-block-text-color padded-bottom-10">Master's Leagues</h3>
+                    <p class="is-size-6">This program is dedicated to implementing athletic fundamentals to improve basketball-specific athleticism as well as basketball skills training to enhance individual and team performance.</p><a class="smooth button tile-button" href="registration.html">Girls</a><a class="margin-left-10 smooth button tile-button" href="registration.html">Boys</a>
+                      <!-- Content -->
+                    </article>
+                    </div>
+              </div>
+            </div>
+        </div>
+            </section>
+        <!-- Tile Section Ends-->
+
+            
+         <!-- Tile Section Starts-->
+            <section class="clearfix">
+        <div id="tab2" class="content-tab" style="display:none">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-4-desktop is-12-mobile">
+                      <div class="card">
+                          <img src="assets/image/level1.jpg" height="100%" width="100%" />
+                          <div class="card-body">
+                            <h5 class="card-title">Little Dribblers</h5>
+                            <p class="card-text">Our Jr. NBA beginner basketball program is designed for new students of the game between the ages of 5 - 10 years old.</p>
+                            <a href="#beginners" class="smooth button is-medium tile-button">More Info</a>  
+                          </div>
+                        </div>
+                    </div>
+                    <div class="column is-4-desktop is-12-mobile">
+                      <div class="card" style="width: 18rem;">
+                          <img src="assets/image/level2.jpg" height="100%" width="100%" />
+                          <div class="card-body">
+                            <h5 class="card-title">Skills Training</h5>
+                            <p class="card-text">We features a girl's only training program for middle school and high school athletes. Girl's ZYBL program coming soon!</p>
+                            <a href="#girls" class="smooth button is-medium tile-button">More Info</a>  
+                          </div>
+                        </div>
+                    </div>
+                    <div class="column is-4-desktop is-12-mobile">
+                      <div class="card" style="width: 18rem;">
+                          <img src="assets/image/level3.jpg" height="100%" width="100%" />
+                          <div class="card-body">
+                            <h5 class="card-title">Elite Training</h5>
+                            <p class="card-text">Our elite training programs are divided into the middle and high school academies. Sign up for training anywhere 1 - 5 hours/week.</p>
+                            <a href="#elite" class="smooth button is-medium tile-button">More Info</a>  
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                
+        <div class="container" id="program1">
+            <div class="columns">
+                <div class="column is-6-desktop is-12-mobile">
+                  <div class="card" style="width: 18rem;">
+                      <img src="assets/image/level4.jpg" height="auto" width="100%">
+                      <div class="card-body">
+                        <h5 class="card-title font-futura-bold">Clinics</h5>
+                        <div class="card-text">Have fun with the sport of basketball by developing fundamental movements, basic basketball skills and life skills.</div>
+                        <a href="#program1" class="smooth button is-medium tile-button">More Info</a>  
+                      </div>
+                    </div>
+                </div>
+                <div class="column is-6-desktop is-12-mobile">
+                  <div class="card" style="width: 15rem;">
+                      <img src="assets/image/level5.jpg" height="auto" width="100%">
+                      <div class="card-body">
+                        <h5 class="card-title font-futura-bold">Academy Skills Training</h5>
+                        <div class="card-text">Implementing athletic fundamentals to improve basketball-specific athleticism and enhance individual and team performance.</div>
+                        <a href="#program2" class="smooth is-medium button tile-button">More Info</a>  
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+            </div>
+        </div>
+            </section>
+
+            <section class="clearfix">
+        <div id="tab3" class="content-tab" style="display:none">
+            <div class="tile is-ancestor">
+              <div class="tile is-vertical is-6">
+                <div class="tile">
+                  <div class="tile is-parent is-vertical">
+                    <article class="tile is-child notification">
+                      <h3 class="is-size-5 font-futura-bold secondary-block-text-color padded-bottom-10">Location 1</h3>
+                        <img src="assets/image/location1.png" height="auto" width="100%">
+                      <p class="is-size-6">This program is dedicated to implementing athletic fundamentals to improve basketball-specific athleticism as well as basketball skills training to enhance individual and team performance.</p><a class="smooth button tile-button" href="registration.html">Girls</a><a class="margin-left-10 smooth button tile-button" href="registration.html">Boys</a>
+                    </article>
+                    <article class="tile is-child notification">
+                      <h3 class="is-size-4 font-futura-bold secondary-block-text-color padded-bottom-10">Location 2</h3>
+                      <p class="is-size-6">This program is dedicated to implementing athletic fundamentals to improve basketball-specific athleticism as well as basketball skills training to enhance individual and team performance.</p><a class="smooth button tile-button" href="registration.html">Girls</a><a class="margin-left-10 smooth button tile-button" href="registration.html">Boys</a>
+                    </article>
+                  </div>
+
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child notification">
+                    <h3 class="is-size-4 font-futura-bold secondary-block-text-color padded-bottom-10">Location 3</h3>
+                    <p class="is-size-6">This program is dedicated to implementing athletic fundamentals to improve basketball-specific athleticism as well as basketball skills training to enhance individual and team performance.</p><a class="smooth button tile-button" href="registration.html">See More</a>
+                    <div class="content">
+                      <!-- Content -->
+                    </div>
+                  </article>
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child notification">
+                    <h3 class="is-size-4 font-futura-bold secondary-block-text-color padded-bottom-10">Location 4</h3>
+                    <p class="is-size-6">This program is dedicated to implementing athletic fundamentals to improve basketball-specific athleticism as well as basketball skills training to enhance individual and team performance.</p><a class="smooth button tile-button" href="registration.html">Girls</a><a class="margin-left-10 smooth button tile-button" href="registration.html">Boys</a>
+                      <!-- Content -->
+                    </article>
+                    </div>
+              </div>
+                <div class="tile is-vertical is-6">
+                <div class="tile">
+                  <div class="tile is-parent is-vertical">
+                    <article class="tile is-child notification">
+                      <h3 class="is-size-5 font-futura-bold secondary-block-text-color padded-bottom-10">Location 6</h3>
+                        <img src="assets/image/location2.png" height="auto" width="100%">
+                      <p class="is-size-6">This program is dedicated to implementing athletic fundamentals to improve basketball-specific athleticism as well as basketball skills training to enhance individual and team performance.</p><a class="smooth button tile-button" href="registration.html">Camps</a><a class="margin-left-10 smooth button tile-button" href="registration.html">Youth Leagues</a>
+                    </article>
+                    <article class="tile is-child notification">
+                      <h3 class="is-size-4 font-futura-bold secondary-block-text-color padded-bottom-10">Location 7</h3>
+                      <p class="is-size-6">This program is dedicated to implementing athletic fundamentals to improve basketball-specific athleticism as well as basketball skills training to enhance individual and team performance.</p><a class="smooth button tile-button" href="registration.html">Girls</a><a class="margin-left-10 smooth button tile-button" href="registration.html">Boys</a>
+                    </article>
+                  </div>
+
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child notification">
+                    <h3 class="is-size-4 font-futura-bold secondary-block-text-color padded-bottom-10">Location 8</h3>
+                    <p class="is-size-6">This program is dedicated to implementing athletic fundamentals to improve basketball-specific athleticism as well as basketball skills training to enhance individual and team performance.</p><a class="smooth button tile-button" href="registration.html">See More</a>
+                    <div class="content">
+                      <!-- Content -->
+                    </div>
+                  </article>
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child notification">
+                    <h3 class="is-size-4 font-futura-bold secondary-block-text-color padded-bottom-10">Location 9</h3>
+                    <p class="is-size-6">This program is dedicated to implementing athletic fundamentals to improve basketball-specific athleticism as well as basketball skills training to enhance individual and team performance.</p><a class="smooth button tile-button" href="registration.html">Girls</a><a class="margin-left-10 smooth button tile-button" href="registration.html">Boys</a>
+                      <!-- Content -->
+                    </article>
+                    </div>
+              </div>
+            </div>
+        </div>
+            </section>
+
+            <section class="clearfix">
+        <div id="tab4" class="content-tab" style="display:none">
+            <div class="tile is-ancestor">
+              <div class="tile is-vertical is-8">
+                <div class="tile">
+                  <div class="tile is-parent is-vertical">
+                    <article class="tile is-child notification has-background-white">
+                      <h3 class="is-size-5 font-futura-bold secondary-block-text-color padded-bottom-10">Academy Skills Training</h3>
+                      <p class="is-size-6">This program is dedicated to implementing athletic fundamentals to improve basketball-specific athleticism as well as basketball skills training to enhance individual and team performance.</p><a class="smooth button tile-button" href="registration.html">Girls</a><a class="margin-left-10 smooth button tile-button" href="registration1.html">Boys</a>
+                    </article>
+                    <article class="tile is-child notification has-background-white">
+                      <h3 class="is-size-4 font-futura-bold secondary-block-text-color padded-bottom-10">Academy Skills Training</h3>
+                      <p class="is-size-6">This program is dedicated to implementing athletic fundamentals to improve basketball-specific athleticism as well as basketball skills training to enhance individual and team performance.</p><a class="smooth button tile-button" href="registration.html">Co-ed</a>
+                    </article>
+                  </div>
+
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child notification has-background-white">
+                    <h3 class="is-size-4 font-futura-bold secondary-block-text-color padded-bottom-10">Academy Skills Training</h3>
+                    <p class="is-size-6">This program is dedicated to implementing athletic fundamentals to improve basketball-specific athleticism as well as basketball skills training to enhance individual and team performance.</p>
+                    <div class="content">
+                      <!-- Content -->
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="tile is-parent">
+                <article class="tile is-child notification has-background-white">
+                  <div class="content">
+                    <h3 class="is-size-4 font-futura-bold secondary-block-text-color padded-bottom-10">Academy Skills Training</h3>
+                    <div class="card-text has-line-height-25">
+                          New Player = $225
+                            <br><br>
+                            Existing Academy Player = $200
+                            <br><br>
+                            A 10-week basketball skills training program for youth.
+                            <br><br>This program is dedicated to implementing athletic fundamentals to improve basketball-specific athleticism as well as basketball skills training to enhance individual and team performance.
+                            <br><br>
+                            Sessions will be held on Fridays at Vocational Institutes and Intermediate Schools.<br>
+                         <a class="smooth button tile-button" href="registration.html">Program 1</a>
+                         <a class="smooth button tile-button margin-top-20" href="registration.html">Program 2</a>               
+                      </div>
+                    <div class="content">
+                      <!-- Content -->
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+        </div> 
+            </section>
+
+
+        </div>
+      
+    </div>
+  </div>
+
+
+    <!-- Footer -->
+
+    <section class="section-footer width-94" id="footer">
+      <div class="footer-blocks">
+        <div class="columns is-mobile is-multiline">
+          <div class="column is-12-mobile is-12-tablet is-12-desktop">
+              <div class="column is-12-mobile is-6-tablet is-4-desktop">
+                <div class="footer-area">
+                    <h1 class="has-text-white is-size-4 is-large font-futura-bold">
+                  Contact</h1>
+                  <table class="table is-fullwidth">
+                    <tr class="has-text-white is-size-6">
+                      <td width="50px">
+                        <i class="far fa-envelope fa-sm"></i>
+                      </td>
+                      <td><a href="mailto:info@heatcheck.com"><span class='phone'>contactus@email.com</span></a></td>
+                    </tr>
+                    <tr class="has-text-white is-size-6">
+                      <td width="50px">
+                        <i class="fas fa-phone-square fa-sm"></i>
+                      </td>
+                      <td><a href="tel:1-888-999-0000"><span class='phone'>1-888-999-0000</span></a></td>
+                    </tr>
+                    <tr class="has-text-white is-size-6">
+                      <td width="50px">
+                        <i class="fas fa-map-marker-alt fa-sm"></i>
+                      </td>
+                      <td>City, Country</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="column is-12-mobile is-6-tablet is-4-desktop">
+                <div class="footer-area">
+                    <h1 class="has-text-white is-size-4 is-large font-futura-bold">
+                  Follow
+                </h1>
+                  <table class="table is-fullwidth">
+                    <tr class="has-text-white is-size-6">
+                      <td width="50px">
+                        <i class="fab fa-instagram fa-sm"></i>
+                      </td>
+                      <td>
+                        <a target="_blank" href="https://www.instagram.com/">Instagram</a>
+                      </td>
+                    </tr>
+                    <tr class="has-text-white is-size-6">
+                      <td width="50px">
+                        <i class="fab fa-twitter fa-sm"></i>
+                      </td>
+                      <td>
+                        <a target="_blank" href="https://www.youtube.com/">Twitter</a>
+                      </td>
+                    </tr>  
+                    <tr class="has-text-white is-size-6">
+                      <td width="50px">
+                        <i class="fab fa-youtube fa-sm"></i>
+                      </td>
+                      <td>
+                        <a target="_blank" href="https://www.youtube.com/">Youtube</a>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="column is-12-mobile is-6-tablet is-4-desktop">
+                <div class="footer-area">
+                    <h1 class="has-text-white is-size-4 is-large font-futura-bold">
+                  Site Map
+                </h1>
+                  <table class="table is-fullwidth">
+                    <tr class="has-text-white is-size-6">
+                      <td width="0px">
+                      </td>
+                      <td>
+                        <a href="index.html">Home</a>
+                      </td>
+                    </tr>
+                    <tr class="has-text-white is-size-6">
+                      <td width="0px">
+                      </td>
+                      <td>
+                        <a href="page1.html">Page 1</a>
+                      </td>
+                    </tr>  
+                    <tr class="has-text-white is-size-6">
+                      <td width="0px">
+                      </td>
+                      <td>
+                        <a href="registration.html">Registration</a>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>    
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a href="#html" class="smooth" id="scrollTop" title="Go to top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <!-- Slick Slider Js -->
+    <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+    <script src="https://vjs.zencdn.net/7.3.0/video.min.js"></script>
+    <script type="text/javascript" src="assets/js/youtube.min.js"></script>
+    <!-- Wow js -->
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.accordion.js"></script>
+    <!-- Instagram Feed -->
+    <!-- <script type="text/javascript" src="assets/js/jquery.instagramFeed.js"></script> -->
+    <!-- Main js -->
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/ajax-mailer.js"></script>
+    <script src="https://vjs.zencdn.net/7.3.0/video.min.js"></script>
+    <script type="text/javascript" src="assets/js/youtube.min.js"></script>
+    <!-- Instagram Initialization -->
+
+    <script type="text/javascript">
+    $('.accordion').accordion({
+      "transitionSpeed": 100
+    });
+    </script>
+  </body>
+
+</html>

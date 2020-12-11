@@ -1,0 +1,474 @@
+@import "_variables.scss";
+
+.nav.navbar{
+    height: auto;
+    overflow: hidden;
+}
+.pb-0{
+    padding-bottom: 0;
+}
+.header_area{
+    display: block;
+    width: 100%;
+}
+.head_inner{
+    width: 30%;
+    float: left;
+}
+
+.navbar-buttons-wrapper.text-right {
+    text-align: right;
+}
+.menuNav{
+    height: auto;
+}
+/* Hero  */
+.hero-body{
+    //* background-image: url(/assets/image/kids.png);
+    background-color: white;
+    background-position: right;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.opacity {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .40), rgba(0, 0, 0, 1));
+    position: absolute;
+    top: 0;
+    left: 0;
+    position: center top;
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 768px){
+    .head_none{
+        display: none;
+    }
+    .header_area {
+        display: block;
+        width: calc(100% - 100px);
+        /* align-items: end; */
+        float: right;
+        text-align: right;
+    }
+    .head_inner {
+        width: 50%;
+        margin-top: -70px;
+        float: right;
+    }
+    .navbar-brand, .navbar-tabs{
+        float: left;
+    }
+}
+
+.container--1 {
+    background: black;
+    width: 100%;
+    padding: 5%;
+}
+.card{
+    width: 100% !important;
+    padding: 5%;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px gray;
+    background-color: white;
+}
+
+.card-1{
+    width: 100% !important;
+    padding: 5%;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px gray;
+    background-color: rgba(245,70,0,0.50);
+}
+
+.card-2{
+    width: 100% !important;
+    padding: 5%;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px gray;
+    background-color: rgba(245,70,0,0.65);
+}
+
+.card-3{
+    width: 100% !important;
+    padding: 5%;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px gray;
+    background-color: rgba(245,70,0,1);
+}
+
+.card-image {
+    text-align: center;
+}
+
+.card-body {
+    color: white;
+}
+
+.card-0{
+    width: 100% !important;
+    height: 100%;
+    padding: 15px;
+    border-radius: 0px;
+    text-align: left;
+    box-shadow: 1.5px 3px 5px gray;
+    background-color: white;
+}
+
+
+.card-text {
+    height: auto;
+    font-family: 'Avenir-Regular';
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+}
+
+.card-no{
+    width: 100% !important;
+    height: 100%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+    background-color: #E14B02;
+}
+
+
+.image-scale {
+  max-width: 100%; 
+  height: auto;
+  border-radius: 5px;     
+}
+
+.image-scale-full {
+  max-width: 100%; 
+  height: auto;
+  border-radius: 0px;     
+}
+
+h5.card-title {
+    font-size: 21px;
+    font-weight: 700;
+    margin: 10px;
+    text-align: center;
+    color: black;
+}
+
+.card p{
+    font-size: 16px;
+    color: #1D1D1D;
+}
+.card .button.is-medium {
+    font-size: 1rem;
+    margin-top: 14px;
+    margin-bottom: 15px;
+}
+
+.card-1 .button.is-medium {
+    font-size: 1rem;
+    margin-top: 14px;
+    margin-bottom: 15px;
+}
+
+.card-2 .button.is-medium {
+    font-size: 1rem;
+    margin-top: 14px;
+    margin-bottom: 15px;
+}
+
+.card-3 .button.is-medium {
+    font-size: 1rem;
+    margin-top: 14px;
+    margin-bottom: 15px;
+}
+
+.zor-text-section{
+    text-align: center;
+}
+.zor-text-section h3, .zor-text-section p{
+    font-size: 22px;
+    font-family: "Avenir-Regular";
+    color: #fff;
+    text-align: center;
+    margin: 30px 0;
+}
+.zor-text-section .zorList{
+    margin-top: 40px;
+}
+.zor-text-section .zorList li{
+    display: block;
+}
+.signup-btn{
+    margin: 0 auto;
+}
+
+.or-section{
+    background-color: #E14B02;
+}
+
+.or-section1{
+    background-color: #000;
+}
+
+.signup-btn {
+    background-color: #fff !important;
+    margin: 0 auto;
+    color: #e14b02 !important;
+}
+
+.menu_area{}
+.menu_area li{
+    display: inline-block;
+    position: relative;
+}
+.drop-menu{
+    position: relative;
+}
+.drop-menu:before{
+    content: "\f078";
+    font-family: "Font Awesome 5 Free";
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    position: absolute;
+    right: 0;
+    top: 36%;
+    color: #fff;
+    font-weight: 900;
+}
+.drop-down{
+    top: 100%;
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: auto;
+    background: #E14B02;
+    z-index: 1;
+    opacity: 0;
+    display: none;
+}
+.drop-menu:hover .drop-down{
+    display: block;
+    opacity: 1;
+}
+.drop-down li{
+    display: block;
+    width: 100%;
+}
+.drop-down li a{
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    padding: 5px 14px;
+}
+.drop-down li a:hover{
+    color: #000;
+    background: #E14B02;
+}
+
+@media (max-width: 768px){
+    .menu_area li{
+        display: block;
+    }
+    .drop-down{
+        width: 95%;
+    }
+    .drop-menu:before{
+        right: 10px;
+    }
+}
+
+.statlink {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+    &:hover {
+    color: white;
+      background-color: black;
+      box-shadow: 4px 4px 4px grey;
+  }
+}
+
+.row {
+    width: 87%;
+    overflow-x: hidden;
+}
+
+.row > .column {
+    column-gap: 1px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.rounded {
+    border-radius: 5px;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: sticky;
+    margin: auto;
+  z-index: 1;
+  padding-top: 0px;
+  top: 0px;
+  width: 80%;
+  height: 70%;
+  overflow: none;
+  background-color: rgba(0, 0, 0, 0.85);
+  border: solid white;
+  border-radius: 5px;      
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #000;
+  border-radius: 5px;
+  margin: auto;
+  padding: 5px;
+  width: auto;
+  max-width: 700px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+    z-index: 1;
+}
+
+.close:hover,
+.close:focus {
+  color: #D95F00;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+    left: 5px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+    right: 5px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #D95F00;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 0 20px 0 rgba(217, 95, 0, 1.0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.clearfix:after {
+ visibility: hidden;
+ display: block;
+ font-size: 0;
+ content: " ";
+ clear: both;
+ height: 0;
+    background: black;
+ }
+
+.bg-black {
+    background-color: black;  
+}
+

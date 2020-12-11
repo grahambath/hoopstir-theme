@@ -2,13 +2,18 @@
 
 .navbar-lower {
   background-color: $navbar-lower-background-color;
+    padding-left: 30px;
   .navbar-item.has-dropdown {
-    top: 3px;
+    top: 0px;
   }
   .navbar-dropdown {
+      border: 1px solid #fff;
+      border-radius: 3px;
     a.navbar-item.dropdown-item {
+        color: #ffffff;
       &:hover {
-        background-color: transparent;
+        background-color: black;
+          color: #000000;
       }
     }
   }
@@ -17,7 +22,7 @@
 @media screen and (min-width: $desktop) {
   .navbar-lower {
     .navbar-start {
-      padding-left: 92px;
+      padding-left: 0px;
     }
 
     .navbar-dropdown {
@@ -51,20 +56,24 @@ nav.navbar {
   background-color: $navbar-main-background-color;
 }
 
-#splash {
-  background-image: url('../image/splash_background.jpg');
-  background-size: cover;
-
-  .bottom-bar {
-    width: 100%;
-    background-color: $bottom-bar-color;
-    height: 20px;
-    margin-bottom: 30px;
-  }
+.navbar-end {
+  padding-left: 0px;
+    align-items: baseline;
 }
 
-.navbar-end {
-  padding-left: 10px;
+.navbar-mid {
+    margin-left: 1em;
+    .navbar-item {
+        img.main-logo {
+        height: 35px;    
+        }
+    }
+    .navbar-item-0 {
+        margin-left: 7em;
+        img.main-logo {
+        height: 35px;    
+        }
+    }
 }
 
 .banner-message {
@@ -78,7 +87,7 @@ nav.navbar {
 }
 
 .navbar-theme {
-  background-color: $navbar-main-background-color;
+  background-color: transparent;
 }
 
 .navbar-menu {
@@ -88,8 +97,8 @@ nav.navbar {
     @media screen and (max-width: 1087px) {
       display: block;
       padding-left: 10px;
-      border-top: 2px solid $mobile-navbar-divider-color;
-      padding-top: 5px;
+      border-top: 5px transparent;
+      padding-top: 0px;
     }
   }
 }
@@ -97,22 +106,26 @@ nav.navbar {
 .navbar-brand {
   .navbar-item {
     img.main-logo {
-      width: 100px;
+      width: 90px;
     }
   }
 }
 
 .navbar-item {
-  font-size: 1.1em;
+  font-size: 4em;
+    font-family: 'Avenir-Regular' !important;
 }
 
 .organization-navbar-title {
-  padding-top: 20px;
   color: $navbar-title-color;
-  font-size: 30px;
+  font-size: 3em;
+  letter-spacing: 1px;
+  font-family: 'Avenir-Ultra-LT';    
+    font-weight: 00px;
 }
 .navbar-buttons-wrapper {
-  padding-top: 20px;
+  padding-top: 10px;
+  margin: 0px;
 }
 
 a.navbar-item:hover,
@@ -129,9 +142,11 @@ a.navbar-item.is-active,
 
 .navbar-burger.burger {
   padding: 13px 0px 0px 0px;
+    right: 15px;
+    position: absolute;
   width: 3.5rem;
   height: 3.5rem;
-  color: #ffffff !important;
+  color: #000000 !important;
 }
 
 .navbar-burger:hover {
@@ -150,8 +165,10 @@ a.navbar-item.is-active,
   color: $navbar-link-color;
   background-color: transparent;
   margin-right: 5px;
-  border-bottom: 5px solid transparent;
+  border-bottom: 0px solid;
   transition: 0.3s;
+  font-family: 'Avenir-Demi-Bold';
+    font-size: 1rem;
 }
 
 @media (min-width: $desktop) {
@@ -169,7 +186,7 @@ a.navbar-item.is-active,
     color: $navbar-link-color;
   }
 }
-
+    
 .hero-text {
   color: $hero-text-color !important;
 }

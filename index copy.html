@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport">
+  <meta name="description" content="">
+  <meta name="auther" content="">
+  <title>North Pole Hoops</title>
+    <link href="assets/nph_circuit.png" rel=icon>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link href="https://vjs.zencdn.net/7.3.0/video-js.min.css" rel="stylesheet">
+    <!-- Slick Slider CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css">
+    <!-- Animate style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+    <!-- Main style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/helper.css">
+    <!-- Map Code Dependency-->
+    <link rel="stylesheet" type="text/css" href="assets/ca-js-map/map-style.css" />
+    
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .landing-panel {
+      position: relative;
+      min-height: calc(100vh - 4px);
+      height: auto;
+      width: calc(100%);
+      text-align: center;
+      border: 2px solid #ffffff;
+    }
+
+    .left-left-top {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: calc(50%);
+      width: calc(20%);
+      border: 2px solid #ffffff;
+      background: #202020 url('assets/index/indexbgts.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }  
+    .left-top {
+      position: absolute;
+      left: 20%;
+      top: 0;
+      height: calc(50%);
+      width: calc(20%);
+      border: 2px solid #ffffff;
+      background: #202020 url('assets/index/indexbgscouting.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .middle-top {
+      position: absolute;
+      left: 40%;
+      top: 0;
+      height: calc(50% );
+      width: calc(20% );
+      border: 2px solid #ffffff;
+	    background: #202020 url('assets/index/indexbgvideo.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .middle-right-top {
+      position: absolute;
+      right: 20%;
+      top: 0;
+      height: calc(50% );
+      width: calc(20% );
+      border: 2px solid #ffffff;
+	    background: #202020 url('assets/index/indexbgbc.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .right-top {
+      position: absolute;
+      right: 0%;
+      top: 0;
+      height: calc(50% );
+      width: calc(20% );
+      border: 2px solid #ffffff;
+	    background: #202020 url('assets/index/indexbgconsult.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .left-left-bottom {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: calc(50% );
+      width: calc(20%);
+      border: 2px solid #ffffff;
+	    background: #202020 url('assets/index/indexbgfuji.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    } 
+    .left-bottom {
+      position: absolute;
+      left: 20%;
+      bottom: 0;
+      height: calc(50% );
+      width: calc(20%);
+      border: 2px solid #ffffff;
+	    background: #202020 url('assets/index/indexbgnpa.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .middle-bottom {
+      position: absolute;
+      left: 40%;
+      bottom: 0;
+      height: calc(50% );
+      width: calc(20%);
+      border: 2px solid #ffffff;
+	    background: #202020 url('assets/index/indexbgexposure.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+      .middle-right-bottom {
+      position: absolute;
+      left: 60%;
+      bottom: 0;
+      height: calc(50% );
+      width: calc(20%);
+      border: 2px solid #ffffff;
+	    background: #202020 url('assets/index/indexbgrc.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .right-bottom {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: calc(50% );
+      width: calc(20%);
+      border: 2px solid #ffffff;
+      background: #202020 url('assets/index/indexbgcnit.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .landing-panel img {
+      width: auto;
+      max-height: 75%;
+      max-width: 275px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @media(max-width: 768px) {
+
+      .left-left-top,
+      .left-top,    
+      .middle-top,
+      .middle-bottom,
+      .middle-right-top,
+      .right-top,
+      .left-left-bottom,    
+      .left-bottom,
+      .middle-right-bottom,    
+      .right-bottom {
+        position: relative;
+        left: 0;
+        top: 0;
+        min-height: 400px;
+        height: auto;
+        width: calc(100%);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <span id="cajstip"></span>  
+  <div class="landing-panel">
+    <div class="left-left-top">
+      <a href="https://www.instagram.com/tariq_sbiet/">
+        <img src="assets/index/indexts.png" alt="Placeholder image" style="height:auto;width: auto;">
+      </a>
+    </div>
+    <div class="left-top">
+      <a href="https://www.npacanada.com/">
+        <img src="assets/index/indexscout.png" alt="Placeholder image">
+      </a>
+    </div>  
+    <div class="middle-top">
+      <a href="cnit.html">      
+        <img src="assets/index/indexvideo.png" alt="Placeholder image">
+      </a>
+    </div>
+    <div class="middle-right-top">
+      <a href="exposurecamps.html">
+        <img src="assets/index/indexbroadcast.png" alt="Placeholder image">
+      </a>
+    </div>
+    <div class="right-top">
+      <a href="repcircuit.html"> 
+        <img src="assets/index/indexconsult.png" alt="Placeholder image">
+      </a>
+    </div>
+    <div class="left-left-bottom">
+      <a href="https://fujifilmprintlife.ca/collections/northpolehoops">
+        <img src="assets/index/indexfuji.png" alt="Placeholder image">
+      </a>
+    </div>
+    <div class="left-bottom">
+      <a href="consulting.html">
+        <img src="assets/index/indexnpa.png" alt="Placeholder image">
+      </a>
+    </div>  
+    <div class="middle-bottom">
+      <a href="videoexposure.html">
+        <img src="assets/index/indexec.png" alt="Placeholder image">
+      </a>
+    </div>
+    <div class="middle-right-bottom">
+      <a href="http://northpolehoops.com/membership-account/post-secondary-programs-build-your-canadian-basketball-pipeline/">
+        <img src="assets/index/indexrc.png" alt="Placeholder image">
+      </a>
+    </div>  
+    <div class="right-bottom">
+      <a href="https://www.instagram.com/mike_nph/">      
+        <img src="assets/index/indexcnit.png" alt="Placeholder image">
+      </a>
+    </div>
+  </div>   
+    
+    <!-- About Us Section -->
+
+    <div class="main-content alternate">
+        <div class="main-body">
+
+          <!-- Centered Heading, Text Block -->
+          <div class="container margin-top-80 width-80 width-97-mobile">
+            <h1 class="is-size-head is-uppercase font-lemonmilk-regular has-text-light has-text-weight-bold is-centered">
+              Welcome to North Pole Hoops
+            </h1>
+          </div>
+          <!-- End -->
+
+          <!-- Youtube Video Block -->
+          <div class="is-centered width-80 width-97-mobile padding-top-80 padding-bottom-80">
+            <div class="full-vid">
+              <video id="vid2" class="video-js vjs-default-skin vjs-big-play-centered"
+                  controls
+                  autoplay
+                  muted
+                  width="100%"
+                  height="100%"
+                  data-setup='{
+                      "techOrder": ["youtube"],
+                      "aspectRatio":"16:9", "fluid": true,
+                      "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=8n3rOkSwCTI"}]
+                  }'
+                >
+              </video>
+            </div>
+          </div>
+          <!-- End -->
+            
+          <!-- Caption Image Block -->
+          <div class="container margin-top-20 width-80 width-97-mobile">
+            <!--h1 class="is-size-head is-uppercase font-futura-bold has-text-light has-text-weight-bold is-centered">
+              The NPH Family
+            </h1-->
+            <br />
+            <br />  
+            <div class="image-wrapper">
+              <div class="image">
+                <img src="./assets/index/sbietbrothers.jpg" height="100%" width="100%" />
+              </div>
+          </div>
+            </div>
+
+            
+    </div>
+    </div>            
+
+            
+  <span id="cajstip"></span>  
+  <div class="landing-panel">
+    <div class="left-left-top">
+      <a href="https://www.instagram.com/tariq_sbiet/">
+        <img src="assets/index/indexts.png" alt="Placeholder image" style="height:auto;width: auto;">
+      </a>
+    </div>
+    <div class="left-top">
+      <a href="https://www.npacanada.com/">
+        <img src="assets/index/indexscout.png" alt="Placeholder image">
+      </a>
+    </div>  
+    <div class="middle-top">
+      <a href="cnit.html">      
+        <img src="assets/index/indexvideo.png" alt="Placeholder image">
+      </a>
+    </div>
+    <div class="middle-right-top">
+      <a href="exposurecamps.html">
+        <img src="assets/index/indexbroadcast.png" alt="Placeholder image">
+      </a>
+    </div>
+    <div class="right-top">
+      <a href="repcircuit.html"> 
+        <img src="assets/index/indexconsult.png" alt="Placeholder image">
+      </a>
+    </div>
+    <div class="left-left-bottom">
+      <a href="https://fujifilmprintlife.ca/collections/northpolehoops">
+        <img src="assets/index/indexfuji.png" alt="Placeholder image">
+      </a>
+    </div>
+    <div class="left-bottom">
+      <a href="consulting.html">
+        <img src="assets/index/indexnpa.png" alt="Placeholder image">
+      </a>
+    </div>  
+    <div class="middle-bottom">
+      <a href="videoexposure.html">
+        <img src="assets/index/indexec.png" alt="Placeholder image">
+      </a>
+    </div>
+    <div class="middle-right-bottom">
+      <a href="http://northpolehoops.com/membership-account/post-secondary-programs-build-your-canadian-basketball-pipeline/">
+        <img src="assets/index/indexrc.png" alt="Placeholder image">
+      </a>
+    </div>  
+    <div class="right-bottom">
+      <a href="https://www.instagram.com/mike_nph/">      
+        <img src="assets/index/indexcnit.png" alt="Placeholder image">
+      </a>
+    </div>
+  </div>
+            
+    <!-- jQuery -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <!-- Wow js -->
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+    <!-- Instagram Feed -->
+    <script type="text/javascript" src="assets/js/jquery.instagramFeed.js"></script>
+    <!-- Main js -->
+    <script type="text/javascript" src="assets/js/ajax-mailer.js"></script>
+    <script src="https://vjs.zencdn.net/7.3.0/video.min.js"></script>
+    <script type="text/javascript" src="assets/js/youtube.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+     <!-- Map Code Dependency-->
+     <script src="assets/ca-js-map/map-config.js"></script>
+     <script src="assets/ca-js-map/map-interact.js"></script>
+     <script src="assets/ca-js-map/pins-config.js"></script>
+</body>
+</html>

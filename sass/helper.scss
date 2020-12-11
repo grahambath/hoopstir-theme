@@ -1,6 +1,7 @@
 @import "header.scss";
 @import "utils.scss";
 @import "buttons.scss";
+@import "custom.scss";
 @import "_variables.scss";
 @import "footer.scss";
 @import "vendor/jquery.accordion.scss";
@@ -13,7 +14,7 @@ body {
   padding: 0;
   margin: 0;
   /* background-image: url("../image/website_background.jpg"); */
-  background-color: $theme-background-color;
+  background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -23,18 +24,241 @@ body {
   line-height: normal !important;
 }
 
-.main-content {
-  /* background: #ffffff url("../image/white-background.png"); */
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top center;
-  height: auto;
-  padding: 0px 0px 50px;
-  border-style: none;
-  // border-radius: 20px; this gives the main content area rounded edges
-  background-color: #fff;
-  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
+.special {
+    box-shadow: -1px 1px 10px 1px rgba(217, 95, 0, 0.7) inset;
+    padding-bottom: 10px;
+    padding-top: 0px;
 }
+
+.main-content {
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  margin: auto; 
+  height: auto;
+  width: 100%;
+  padding: 0px 0px;
+  border-style: none;
+  border-radius: 0px;
+  box-shadow: 0 0 0px 0 rgba(217, 95, 0, 0.9);
+  z-index: 0;
+}
+
+.main-content-00 {
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  margin: auto; 
+  height: auto;
+  width: 100%;
+  padding: 0px 0px;
+  border-style: none;
+  border-radius: 0px;
+  box-shadow: 0 0 0px 0 rgba(217, 95, 0, 0.9);
+  z-index: 0;
+}
+
+.main-body {
+  padding-bottom: 50px;
+  width: 97%;
+  border-radius: 7px;
+  background-color: lightgray;
+}
+
+.primary-theme-color {
+  color: $primary-theme-block-heading-color;
+    
+}
+
+.mpg-text {
+    font-size: 5em;
+    padding: 20px;
+    margin-left: 0em;
+    margin-top: -1.5em;
+    font-family: 'Futura-Bold';
+    font-style: none;
+}
+
+.text-intro {
+    margin: 50px auto;
+    width: 80%;
+    
+   h1 {
+    color: $theme-trim-color;
+    font-size: 4.5em;
+    padding-bottom: 20px;
+    font-family: 'Futura-Bold';
+    font-style: none; 
+       text-align: center;
+    }
+       p {
+           line-height: 30px;
+           font-size: 1.5em;
+           font-family: 'Avenir-Regular';
+           color: #000;
+           text-align: center;
+       }       
+      }
+
+.text-heading {
+    margin: auto;
+    padding: 4em 1em;
+    width: 80%;
+    
+   h1 {
+    color: #fff;
+    font-size: 4.5em;
+    padding: 20px 0px;
+    font-family: 'Futura-Bold';
+    font-style: none; 
+       text-align: left;
+    }
+       p {
+           line-height: 30px;
+           font-size: 1.5em;
+           font-family: 'Avenir-Regular';
+           color: #fff;
+           text-align: left;
+       }       
+      }
+
+.text-page {
+    margin: 50px auto;
+    width: 80%;
+    
+   h1 {
+    color: $theme-trim-color;
+    font-size: 4.5em;
+    padding-bottom: 20px;
+    font-family: 'Futura-Bold';
+    font-style: none; 
+       text-align: left;
+    }
+       p {
+           line-height: 30px;
+           font-size: 1.5em;
+           font-family: 'Avenir-Regular';
+           color: #000;
+           text-align: left;
+       }       
+      }
+
+.text-block {
+  padding: 50px 10%;
+    width: 100%;
+    text-align: left;
+    border-radius: 0px;
+    background-color: black;
+    margin: 0px auto;
+    box-shadow: 0px 0px 0px;
+    
+    h2 {
+      font-size: 2em;
+      font-family: 'Futura-Bold';
+      color: #fff;
+        text-transform: none;
+    }
+    
+    p {
+     font-family: 'Avenir-Regular';
+     color: #fff;     
+     font-size: 1.5em;    
+    }
+    @media screen and (max-width: 768px) {
+    width: 100% !important;
+  }
+
+  .content {
+    padding: 30px 0px;
+      margin: 0px 0px;
+  }
+}
+
+.image-text-block {
+    display: block;
+    position: relative;
+    background: url("/assets/image/vancitybasketball2.jpg");
+    background-repeat: no-repeat;
+    filter: sepia(80%);
+    background-size: cover;
+    background-color: red;
+    padding: 50px 10%;
+    width: 100%;
+    height: 700px;
+    text-align: left;
+    border-radius: 0px;
+    margin: 0px auto;
+    box-shadow: 0px 0px 0px;
+    
+    h2 {
+      font-size: 2em;
+      font-family: 'Futura-Bold';
+      color: #fff;
+        text-transform: none;
+    }
+    
+    p {
+     font-family: 'Avenir-Regular';
+     color: #fff;     
+     font-size: 1.5em;    
+    }
+    @media screen and (max-width: 768px) {
+    width: 100% !important;
+  }
+
+  .content {
+    padding: 30px 0px;
+      margin: 0px 0px;
+  }
+}
+
+.image-text-block-2 {
+    position: relative;
+    background: url("/assets/image/vancitybasketball.jpg");
+    background-repeat: no-repeat;
+    filter: sepia(80%);
+    background-size: cover;
+    background-color: red;
+    padding: 50px 10%;
+    width: 100%;
+    height: 700px;
+    text-align: left;
+    border-radius: 0px;
+    margin: 0px auto;
+    box-shadow: 0px 0px 0px;
+    
+    h2 {
+      font-size: 2em;
+      font-family: 'Futura-Bold';
+      color: #fff;
+        text-transform: none;
+    }
+    
+    p {
+     font-family: 'Avenir-Regular';
+     color: #fff;     
+     font-size: 1.5em;    
+    }
+    @media screen and (max-width: 768px) {
+    width: 100% !important;
+  }
+
+  .content {
+    padding: 30px 0px;
+      margin: 0px 0px;
+  }
+}
+
+.image-opacity {
+    background-color: #000;
+    opacity: 90%;
+    width: 100%;
+    height: 700px;
+    z-index: 1;
+}
+
 
 .main-content .hero.is-medium .hero-body {
   padding-bottom: 25px;
@@ -166,88 +390,10 @@ section.subscribe-block {
   }
 }
 
-.main-content.alternate {
-  background-image: none !important;
-}
-
 h2 {
   font-size: 40px;
   color: #fff;
   text-transform: uppercase;
-}
-
-.foundation-page {
-  .max-width-80 {
-    max-width: 40%;
-    @media screen and (min-width: 1100px) {
-      max-width: 32%;
-    }
-  }
-  .max-width-85 {
-    max-width: 40%;
-  }
-  .max-width-1152 {
-    max-width: 960px;
-    padding: 0px;
-  }
-
-  .hero-body {
-    padding: 200px 0px;
-  }
-
-  .main-content {
-    font-family: 'Avenir-Regular' !important;
-    section#about{
-      padding-bottom: 80px;
-    }
-    .article-image {
-      // .article-hero-image {
-      //   width: 300px;
-      //   height: 100%;
-      // }
-      .article-hero-image {
-        padding-top: 20px;
-        padding-bottom: 40px;
-      }
-    }
-    .padded-content {
-      padding: 20px;
-      &.justify-text {
-        text-align: justify;
-      }
-    }
-
-    .columns {
-      .article-image {
-        padding: 20px;
-      }
-    }
-    .article-text {
-      padding: 20px;
-    }
-
-    .image-with-text {
-      position: relative;
-      padding-top: 30px;
-      margin-left: 20px;
-      @media screen and (max-width: 769px) {
-        margin-left: 0px;
-      }
-      .article-image {
-        padding: 0px;
-      }
-      .image-description-block {
-        background-color: #000000a6;
-        padding: 5px 8px;
-        position: absolute;
-        bottom: 5px;
-        width: 100%;
-        .image-description-text {
-          color: #fff;
-        }
-      }
-    }
-  }
 }
 
 a.contact-email-form {
@@ -274,13 +420,6 @@ a.active {
 }
 
 .home {
-  .hero-body {
-    margin-bottom: 40px;
-    img {
-      width: 100%;
-      max-width: 100%;
-    }
-  }
   .motivation-hero {
     left: 30px;
     padding-top: 30px;
@@ -289,8 +428,8 @@ a.active {
     }
   }
   .splash-logo {
-    padding-top: 30px;
-    max-width: 600px;
+    margin-top: -8em;
+    max-width: 300px;
   }
 
   .email-text {
@@ -339,89 +478,6 @@ table.table.standings {
   .panel-heading {
     border: none;
     color: #fff !important;
-  }
-}
-
-.locations {
-  .secondary-content, .main-content {
-    overflow: hidden;
-    padding: 0px;
-  }
-  .secondary-content {
-    padding-bottom: 20px;
-    @media screen and (min-width: 769px) {
-      padding-bottom: 0px;
-    }
-    .columns {
-      top: 0px;
-    }
-  }
-  .map-and-info {
-    .map-container {
-      .column {
-        &.map {
-          background-size: cover;
-          height: 400px;
-          &.facility-1 {
-            background-image: url('../image/map_facility1.png');
-          }
-
-          &.facility-2 {
-            background-image: url('../image/map_facility2.png');
-          }
-
-          &.facility-3 {
-            background-image: url('../image/map_facility3.png');
-          }
-
-          &.facility-4 {
-            background-image: url('../image/map_facility4.png');
-          }
-
-          &.facility-5 {
-            background-image: url('../image/map_facility5.png');
-          }
-        }
-        .location-details {
-          padding: 10px 0px;
-        }
-        &.info {
-          padding-top: 20px;
-          @media screen and (min-width: 769px) {
-            padding-top: 100px;
-          }
-        }
-      }
-    }
-  }
-}
-
-.about {
-  .main-content {
-    font-size: 17px;
-  }
-}
-
-
-// MAXHOOPS
-
-.main-body {
-  padding: 40px 0px;
-}
-
-.primary-theme-color {
-  color: $primary-theme-block-heading-color;
-}
-
-.text-block {
-  padding: 20px;
-
-  &.background-color-block {
-    background-color: #efefef;
-  }
-
-  .content {
-    padding-top: 20px;
   }
 }
 
@@ -511,6 +567,7 @@ table.table.standings {
   }
   .menu-list {
     padding-left: 10px;
+      text-align: left;
     @media screen and (max-width: 768px) {
       padding-left: 0px;
     }
@@ -519,7 +576,8 @@ table.table.standings {
     padding-top: 8px;
     padding-bottom: 0px;
     &:hover {
-      background-color: #fff;
+      background-color: $theme-trim-color;
+        font-color: #fff;
     }
   }
   .players-location {

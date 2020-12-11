@@ -313,6 +313,7 @@ fieldset[disabled] .pagination-ellipsis {
 }
 
 /*! minireset.css v0.0.4 | MIT License | github.com/jgthms/minireset.css */
+
 html,
 body,
 p,
@@ -338,6 +339,10 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+}
+
+body {
+    position: relative;
 }
 
 h1,
@@ -400,13 +405,25 @@ th {
 }
 
 html {
-  background-color: white;
+  background-color: black;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  min-width: 300px;
+  min-width: 375px;
   overflow-x: hidden;
   overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+}
+
+body {
+  background-color: black;
+  font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 375px;
+  overflow-x: hidden;
+  overflow-y: hidden;
   text-rendering: optimizeLegibility;
   text-size-adjust: 100%;
 }
@@ -2977,7 +2994,8 @@ fieldset[disabled] .button {
 }
 
 .container {
-  margin: 0 auto;
+  width: 95%;
+    margin: 0 auto;
   position: relative;
 }
 
@@ -2985,6 +3003,7 @@ fieldset[disabled] .button {
   .container {
     max-width: 960px;
     width: 960px;
+      height: auto;
   }
 
   .container.is-fluid {
@@ -4609,6 +4628,8 @@ print {
   }
   .offset-hero {
     padding-left: 10% !important;
+    padding-right: 10% !important;
+      text-align: center;
   }
 }
 
@@ -5690,10 +5711,14 @@ a.tag:hover {
 }
 
 .title {
-  color: #363636;
+  color: white;
   font-size: 2rem;
   font-weight: 600;
-  line-height: 1.125;
+  line-height: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  line-height: 40px;
 }
 
 .title strong {
@@ -7528,7 +7553,7 @@ a.navbar-item.is-active,
 
   .navbar-menu {
     background-color: white;
-    box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
+    box-shadow: 0 0px 0px rgba(10, 10, 10, 0.1);
     padding: 0.5rem 0;
   }
 
@@ -8268,6 +8293,7 @@ label.panel-block:hover {
   flex-grow: 1;
   flex-shrink: 1;
   padding: 0.75rem;
+    height: auto;
 }
 
 .columns.is-mobile>.column.is-narrow {
@@ -10860,8 +10886,10 @@ print {
 }
 
 .hero.is-link {
-  background-color: #3273dc;
-  color: #fff;
+  background-image: url(../image/kids.png);
+  background: linear-gradient(50deg, #000000, #F54600);
+  opacity: 100%;
+  
 }
 
 .hero.is-link a:not(.button):not(.dropdown-item):not(.tag),
@@ -11381,6 +11409,29 @@ print {
   flex-grow: 1;
   flex-shrink: 0;
   padding: 3rem 1.5rem;
+  background-position: center;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
+}
+
+.opacity {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
+    position: absolute;
+    top: 0;
+    left: 0;
+    position: center top;
+    height: 100%;
+    width: 100%;
+}
+
+.section-footer {
+    background-color: #000;
+    border-top: 0px solid white;
+    margin: auto;
+    box-shadow: 0px 0px 0px rgba(217, 95, 0, 0.9) inset;
+    height: auto;
 }
 
 .section {
@@ -11461,6 +11512,7 @@ hr {
 
 .padding--1 {
   padding: 1em;
+    min-height: 80px;
 }
 
 .padding--2 {
@@ -11521,7 +11573,8 @@ hr {
 @media(max-width:479px) {
   .is-size-head {
     font-size: 30px;
-    line-height: 40px;
+    line-height: 55px;
+    text-align: center;
   }
 }
 

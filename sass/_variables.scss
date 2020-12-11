@@ -1,30 +1,35 @@
-// GLOBAL
-  $theme-background-color: #000;
-  $scroll-top-button-background: #999999;
+// GLOBAL - CHange background image from style.css line 11384
+
+$navbar-lower-background-color: #000;
+$theme-trim-color: #000;
+
+$theme-button-hover-color: gray;
+
+  $theme-background-color: transparent;
+  $scroll-top-button-background: #F54600;
   $scroll-top-button-text-color: #fff;
-  $scroll-top-button-background-hover: #D95F00;
+  $scroll-top-button-background-hover: #999999;
   $scroll-top-button-text-color-hover: #000;
 
   // TODO: add page background color (currently white)
 
 
 // Title Bar
-  $navbar-main-background-color: #000;
-  $navbar-title-color: #fff;
+  $navbar-main-background-color: #fff;
+  $navbar-title-color: #000;
 //
 
 // Title Bar Button
   $button-background-red: #D95F00;
-  $button-text-color: #fff;
+  $button-text-color: #000;
   $button-text-hover-color: #000;
 //
 
 // Nav Bar
-  $navbar-lower-background-color: #D95F00;
-  $navbar-dropdown-color: #D95F00;
-  $navbar-link-hover-color: #000;
+  $navbar-dropdown-color: #000000;
+  $navbar-link-hover-color: #F54600;
   $navbar-link-color: #fff; 
-  $mobile-navbar-divider-color: #D95F00;
+  $mobile-navbar-divider-color: transparent;
   $bottom-bar-color: #000;
   $top-bar-color: #fff;
   $banner-message-color: #fff;
@@ -40,8 +45,8 @@
 
 // BLOCKS
   $primary-theme-block-heading-color: #D95F00;
-  $block-text-color: #000;
-  $secondary-block-text-color: #000;
+  $block-text-color: lightgrey;
+  $secondary-block-text-color: black;
 //
 
 // ACCORDION
@@ -51,7 +56,7 @@
 //
 
 // FOOTER VARIABLES
-  $footer-links-hover-color: #D95F00;
+  $footer-links-hover-color: #F54600;
   $border-button-hover-color: #000;
 //
 
